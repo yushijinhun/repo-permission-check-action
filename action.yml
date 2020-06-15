@@ -5,6 +5,9 @@ inputs:
   permission:
     description: the max permission level required
     required: true
+  user:
+    description: the user to check, default to token's owner
+    required: false
 runs:
   using: "node12"
   main: "lib/index.js"

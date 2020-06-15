@@ -21,6 +21,7 @@ steps:
     uses: "lannonbr/repo-permission-check-action@2.0.0"
     with:
       permission: "write"
+      user: "username" # optional; default to token's owner
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
